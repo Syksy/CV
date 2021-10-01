@@ -1,0 +1,229 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+%\profilepic{naamakuva.png} % Profile picture
+\profilepic{TDL_out2_crop400x400.png} % Profile picture
+
+\cvname{\Large{Teemu Daniel Laajala}} % Your name
+%\cvjobtitle{\large{Post-doc \newline UTU \& UCDenver}} % Job title/career
+\cvjobtitle{\large{FICAN Cancer Researcher}} % Job title/career
+
+\cvdate{b. 1987 \newline} 
+\cvaddress{Turku, Finland} 
+\cvnumberphone{(+358) 400 842 893 \newline } 
+\cvsite{http://orcid.org/0000-0002-7016-7354 \newline} 
+\cvmail{teelaa@utu.fi \newline teemu.daniel.laajala@gmail.com} 
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{
+- Applied math \& machine learning
+\newline
+- Prognostic \& predictive modeling
+\newline
+- Preclinical \& clinical oncology
+\newline
+- Multi-'omics \& translatability
+\newline
+- Open science, data, and source code
+\newline
+- R-programming \& CRAN-packages
+} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+%\skills{{pursuer of rabbits/5.8},{good manners/4},{outgoing/4.3},{polite/4},{Java/0.01}}
+\skills{
+IT
+\begin{itemize}
+    \item R, C\#, Python, Java, C, Matlab
+    \item LaTeX, SQL, XML, JSON
+    \item MS Office, Inkscape, GIMP, Adobe suite, HTML/CSS
+\end{itemize}
+
+Languages
+\begin{itemize}
+    \item Professional: Finnish \& English
+    \item Conversational: Swedish
+\end{itemize}
+
+Linked profiles
+
+\color{mainblue}
+
+    -- \href{https://www.researchgate.net/profile/Teemu_Laajala}{ResearchGate}
+
+    -- \href{https://scholar.google.fi/citations?user=L4vsRhAAAAAJ}{Google Scholar}
+
+    -- \href{https://stackoverflow.com/users/2046903/teemu-daniel-laajala}{Stack Overflow}
+
+    -- \href{https://github.com/Syksy}{GitHub}
+
+    -- \href{https://www.linkedin.com/in/teemu-daniel-laajala-369a6010b/}{LinkedIn}
+
+    -- \href{https://twitter.com/TDLaajala}{Twitter}
+}
+
+%------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+%\skillstext{
+%    {lovely/4},
+%    {narcissistic/3}
+%}
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 INTERESTS
+%----------------------------------------------------------------------------------------
+
+%\section{Interests}
+
+%The heroine and the dreamer of Wonderland; Alice is the principal character.
+
+\section{Research experience}
+
+\begin{twenty} % Environment for a list with descriptions
+	\vspace*{-0.4cm}
+	\twentyitem{2018 --}{FICAN West (Läntinen Syöpäkeskus, UTU)}{Post-doc}{}
+	\vspace*{-0.4cm}
+	\twentyitem{2018 --}{University of Colorado -- Costello Lab (UCDenver)}{Post-doc}{}
+	\twentyitem{2013 -- 2018}{Department of Mathematics \& Statistics (UTU)}{PhD student}{Multiple research topics mainly focused on oncology \newline with a PhD thesis focus on advanced prostate cancer.}
+	\twentyitem{2013 -- 2018}{Turku Centre for Biotechnology (UTU, ÅA)}{PhD student}{PSA-molecule research and models for predicting \newline progression of prostate and kidney cancer. }
+	\twentyitem{2013 -- 2018}{Institute for Molecular Medicine Finland (FIMM, HY)}{Project researcher}{Head bioinformatician in multiple collaborative projects.}
+	\twentyitem{2010 -- 2012}{Department of Mathematics \& Statistics (UTU)}{Project researcher}{ChIP-seq method development and analysis of cancer studies.}	
+	\twentyitem{2008, 2009}{Turku Centre for Biotechnology (UTU, ÅA)}{Summer intern}{ChIP-seq sequence and diabetes microarray analyses.}	
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2013 -- 2018}{PhD {\normalfont ('with honours' special mention)}}{University of Turku}{Topic of thesis: \emph{Modeling and Prediction \newline of Advanced Prostate Cancer} 
+	%\newline Pääaine: Matemaattinen mallintaminen
+	}
+	\twentyitem{2006 -- 2012}{MSc (Tech) (Bioinformatics, 'exceptional' honors)}{Aalto University}{}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Selected publications (First or shared first author)}
+
+\begin{twentyshort} % Environment for a short list with no descriptions
+	\twentyitemshort{IF 2017/2018}{}
+	\twentyitemshort{5.481}{Laajala TD*, Murtojärvi M*, et al. \emph{ePCR: an R-package for survival and time-to-event prediction in advanced prostate cancer, applied to real-world patient cohorts.} Bioinformatics. 2018 Nov 15;34(22):3957-3959.}
+	\twentyitemshort{4.540}{Huvila J*, Laajala TD*, et al. \emph{Combined ASRGL1 and p53 immunohistochemistry as an independent predictor of survival in endometrioid endometrial carcinoma.} Gynecol Oncol. 2018 Apr;149(1):173-180.}
+	\twentyitemshort{36.421}{Guinney J*, Wang T*, Laajala TD*, et al. \emph{Prediction of overall survival for patients with metastatic castration-resistant prostate cancer: development of a prognostic model through a crowdsourced challenge with open clinical trial data.} Lancet Oncol. 2017 Jan;18(1):132-142.}
+	\twentyitemshort{4.122}{Laajala TD, et al. \emph{Optimized design and analysis of preclinical intervention studies in vivo.} Sci Rep. 2016 Aug 2;6:30723.}	
+	\twentyitemshort{10.199}{Laajala TD, et al. \emph{Improved statistical modeling of tumor growth and treatment effect in preclinical animal studies with highly heterogeneous responses in vivo.} Clin Cancer Res. 2012 Aug 15;18(16):4385-96.}
+	%\twentyitemshort{<dates>}{<title/description>}
+	
+%\twentyitemshort{3.}{Ruuth M, Nguyen SD, Vihervaara T, Hilvo M, Laajala TD, et al. \emph{Susceptibility of low-density lipoprotein particles to aggregate depends on particle lipidome, is modifiable, and associates with future cardiovascular deaths.} Eur Heart J. 2018 Jul 14;39(27):2562-2573.}
+	%\twentyitemshort{4.}{Kauko O, et al. (Laajala TD \#10 / 18). PP2A inhibition is a druggable MEK inhibitor resistance mechanism in KRAS-mutant lung cancer cells. Sci Transl Med. 2018 Jul 18;10(450).}
+
+	
+\end{twentyshort}
+
+\vspace*{-0.3cm}
+\small
+* = Equal contribution
+%----------------------------------------------------------------------------------------
+%	 AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Researcher}
+\small 
+\subsection{Awards \& Funding}
+
+\vspace*{-0.2cm}
+Elias Tillandz -prize 2017 (best scientific publication in Turku BioCity, awarded 2018) as first author; again in 2019 as non-first author; Participation in two DREAM challenges with DREAM 9.5 mCRPC Challenge Top Performer (2015) \& DREAM Anti-PD1 Response Prediction DREAM Challenge Top Performer (2021, on-going).
+%\begin{twentyshort} % Environment for a short list with no descriptions
+%	\twentyitemshort{2018}{Elias Tillandz -prize 2017 (vuoden tiedejulkaisu Turun BioCityssä)}
+%	\twentyitemshort{2015}{DREAM 9.5 mCRPC Challenge Top Performer \& NCI / NIH Research Grant}
+%	\twentyitemshort{2015}{Prostate Cancer Foundation: Prostate Cancer DREAM Challenge Best Performing Team}
+%	%\twentyitemshort{<dates>}{<title/description>}
+%\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+%\subsection{Funding}
+
+\vspace*{-0.1cm}
+FICAN Cancer Researcher (Finnish Cancer Institute, 2020-2022); NIH grant "Curated prostate cancer data for novel and reproducible prognostic modeling" (2020-2022); Finnish Cultural Foundation (central fund 2014, VS-regional 2018, 2019); DRDP doctoral programme (2014); NIH/NCI DREAM/mCRPC-sponsorship (2016).
+
+\subsection{Overview}
+
+\vspace*{-0.2cm}
+Brief statistics 10/2021: Citations 1014 \& h index 20 (Google Scholar); ResearchGate score 33.41 (best >10\% quantile); 30+ peer-reviewed articles in PubMed, of which 5+ in >10 IF journals; Stack Overflow best >25\% quantile, >3\% quantile in R.
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\makeprofile % Print the sidebar
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
